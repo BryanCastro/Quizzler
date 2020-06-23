@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizzler Sign-up</title>
+    <link rel="icon" type="image/png" href="Images/Quzzlet.ico">
+    <link type="text/css" rel="Stylesheet" href="signup.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="registration.js"></script>
+</head>
+
+<body>
+
+
+    <div class="topMargin">
+        <h1 class="centerText">Quizzler</h1>
+        <div class="container">
+            <h2 class="centerText">Registration</h2>
+
+
+
+            <!-- -----------Form Begins------------ -->
+
+
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputFirstName">First Name: </label>
+                    <input type="text" name="first_name" pattern="[A-Za-z]{1,}" required="required" type="text" class="form-control" id="exampleInputFirstName" placeholder="First Name">
+                    <small id="emailHelp" class="form-text text-muted"></small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputFirstName">Last Name: </label>
+                    <input type="text" name="last_name" pattern="[A-Za-z]{1,}" required="required" type="text" class="form-control" id="exampleInputFirstName" placeholder="Last Name">
+                    <small id="emailHelp" class="form-text text-muted"></small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address: </label>
+                    <input type="email" name="first_name" pattern="^\D{0,15}\@gmail\.com$" placeholder="anything@gmail.com" required="required" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                    <label for="txtpassword">Password: </label>
+                    <input type="password" id="txtpassword" name="pwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required class="form-control select" id="password" placeholder="Password" onkeyup='check();' onchange='check_pass();'><span id="message"></span>
+                    <small class="form-text text-muted">
+                     Requirements: 
+                        <ul>
+                            <li>Be a minimum of eight(8) characters in
+                            length.</li>
+                            <li>One(1) Uppercase letter (A-Z)</li>
+                            <li>One(1) Special character (~`!@#$%^&*()+=_-{}[]\|:;”’?/>,.) </li>
+                        </ul></small>
+
+
+                    <div class="form-group">
+                        <label for="confirm_password">Confirm Password: </label>
+                        <input type="password" id="confirm_password" name="pwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required class="form-control select" placeholder="Password" onkeyup='check();' onchange='check_pass();'><span id="message"></span>
+                        <small class="form-text text-muted">
+                        
+                                
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Keep me
+                    signed in</label>
+                </div>
+                <button type="submit" id="sumbit" class="btn btn-danger" disabled>Submit</button>
+            </form>
+
+
+            <!-----------Form Ends----------------------->
+
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+html body {
+    background: rgba(252, 123, 155, 0.226);
+}
+
+html h1 {
+    font-size: 5rem;
+    color: rgb(252, 186, 192);
+}
+
+.container {
+    background: rgba(81, 240, 41, 0.267);
+    justify-content: 0 auto;
+    /* margin: 0 auto;*/
+    width: 25% !important;
+}
+
+form {
+    padding: 20px;
+}
+
+.form-control {
+    border-radius: 1.0rem !important;
+}
+
+.container {
+    border-radius: 1.0rem !important;
+    padding-bottom: 25px;
+}
+
+.centerText {
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.topMargin {
+    margin-top: 5rem;
+}
